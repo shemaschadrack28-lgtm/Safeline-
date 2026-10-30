@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-midnight: #0B1328;
+  --color-deep-ocean: #0F2747;
+  --color-aurora-mint: #10B981;
+  --color-signal-teal: #14B8A6;
+  --color-electric-lime: #C6F432;
+  --color-ice-white: #F0F9FF;
+  --color-royal-blue: #2563EB;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Custom scrollbar for clean financial views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}

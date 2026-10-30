@@ -1,0 +1,8 @@
+{
+  "name": "Safeline — Personal Finance & Financial Intelligence",
+  "description": "Offline-capable personal finance platform with zero-based budgeting, personal inflation tracking, shopping lists with spending caps, unit-price comparisons, and bill of quantities (BoQ) project estimation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
